@@ -28,8 +28,12 @@
           align="center"
           label="操作"
           min-width="180">
-        <!--slot-scope="scope"
+        <!--v-slot="{row}"
+        
         自定义列表固定写法
+        作用域插槽
+        scope.row
+        es6解构赋值
         row返回那一行的信息
         -->
         <template v-slot="{row}">
