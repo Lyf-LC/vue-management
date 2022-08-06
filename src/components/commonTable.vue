@@ -32,9 +32,9 @@
         自定义列表固定写法
         row返回那一行的信息
         -->
-        <template slot-scope="scope">
-          <el-button size="mini" @click="edit(scope.row)">编辑</el-button>
-          <el-button size="mini" type="danger" @click="remove(scope.row)">删除</el-button>
+        <template v-slot="{row}">
+          <el-button size="mini" @click="edit(row)">编辑</el-button>
+          <el-button size="mini" type="danger" @click="remove(row)">删除</el-button>
         </template>
       </el-table-column>
     </el-table>
