@@ -1,7 +1,9 @@
 # vue-management
 
 ## 通过这里快速访问 https://management-lyf-lc.vercel.app/
-+++账号/密码:admin 
+
+> * 超级账号：admin  &nbsp; &nbsp;&nbsp;&nbsp;密码：admin 
+> * 普通账号：xiaoxiao  &nbsp;&nbsp;&nbsp;&nbsp;密码 ：xiaoxiao
 
 ## Project setup
 ```
