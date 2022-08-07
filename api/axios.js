@@ -3,9 +3,11 @@ import config from "../config"
 const baseUrl = process.env.NODE_ENV === "development" ? config.baseUrl.dev : config.baseUrl.pro
 
 class HTTPResponse {
+//     constructor 是一种用于创建和初始化class创建的对象的特殊方法。 相当于构造函数
     constructor(baseUrl) {
         this.baseUrl = baseUrl
     }
+//     默认配置
     getInsideConfig() {
         const config = {
             baseUrl: this.baseUrl,
@@ -35,9 +37,13 @@ class HTTPResponse {
     }
 
     request(options){
+//         axios创建实例
         const instance = axios.create()
+//         配置项
         options={...this.getInsideConfig,...options}
+//         添加拦截器
         this.interceptors(instance);
+        
         return instance(options);
 
     }
