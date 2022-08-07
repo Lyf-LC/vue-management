@@ -1,5 +1,7 @@
 # vue-management
 
+## 通过这里快速访问 https://management-lyf-lc.vercel.app/
+
 ## Project setup
 ```
 yarn install
